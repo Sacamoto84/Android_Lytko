@@ -42,6 +42,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Запуск виджета
+        setContentView(R.layout.activity_main)
 
         //Инициализайия демо списка дял настроек
         init_demo_config()
