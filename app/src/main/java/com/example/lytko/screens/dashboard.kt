@@ -1,16 +1,11 @@
 package com.example.lytko.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.DrawerValue
-import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.Face
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.rememberScaffoldState
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -18,9 +13,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.ExperimentalTextApi
 import androidx.compose.ui.text.PlatformTextStyle
@@ -29,21 +22,18 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.lytko.R
-import com.example.lytko.custom_element.CustomBlueButton
 import com.example.lytko.navigation.Destinations
-import com.example.lytko.ui.theme.*
-import com.google.accompanist.flowlayout.FlowColumn
+import com.example.lytko.ui.theme.colorBackgroundDark
+import com.example.lytko.ui.theme.colorBackgroundLight
+import com.example.lytko.ui.theme.colorTextGray
 import com.siddroid.holi.colors.MaterialColor
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import libs.modifier.drawColoredShadow
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -171,8 +161,19 @@ fun ScreenDashboard(navController: NavHostController) {
                     selected = false,
 
                     onClick = {
+
+
+
+
+
+
                         scope.launch { drawerState.close() }
                         //selectedItem.value = item
+
+
+
+
+
                     },
                     modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding),
                     colors = NavigationDrawerItemDefaults.colors(

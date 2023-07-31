@@ -1,8 +1,5 @@
 package com.example.lytko.navigation
 
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
-
 object Destinations {
     const val Screen_Dashboard = "DASHBOARD"
     const val Login = "LOGIN"
